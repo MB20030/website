@@ -12,6 +12,7 @@ Site: **https://mb20030.github.io/website/**
 - `assets/moritz-beyn.png`: original supplied portrait.
 - `assets/e-ski.webp`: project image from the official e-SKI website.
 - `assets/icons.svg`: local SVG icon sprite; no third-party scripts or fonts.
+- `assets/logos/`: official university and company logos, stored locally.
 
 Open `index.html` directly or serve the folder with a static HTTP server. No dependency installation is required. The full collection and all destination links are present in the HTML, including when JavaScript is disabled. The optional filters and theme controls appear when JavaScript is available. The mobile navigation closes with Escape, keeps keyboard focus inside the open menu, and makes the page behind it inert. Theme preference is saved locally, with the system preference used initially.
 
@@ -29,12 +30,11 @@ Personal background is retained from the existing website, previously based on t
 - [e-SKI](https://e-ski.ch/): project description and [project photograph](https://e-ski.ch/wp-content/uploads/2023/12/eski-hero.webp). The photo is used only to identify the e-SKI project.
 - [LEADER, 9 November 2026](https://www.leaderdigital.ch/news/thurgauer-skiantrieb-soll-die-tv-loewen-ueberzeugen-16796.html): e-SKI and its planned Swiss television appearance. The card paraphrases the story and does not imply the appearance has already aired.
 - [HSG Campus Conversation #94](https://www.unisg.ch/en/newsroom/podcastdetail/news/campus-conversation-94-with-moritz-beyn/): podcast link retained from the existing website.
-- [SRF, 15 October 2025](https://www.srf.ch/audio/regionaljournal-ostschweiz/ein-thurgauer-tueftelt-seit-10-jahren-am-e-ski?id=AUDI20251015_NR_0053): Stefan Lang's workshop and the electric ski.
 - [Unibloom](https://www.unibloom.world/): company destination; internship work is described from the existing website.
 - [ALMA 4/2025](https://issuu.com/hsgalumni/docs/alma_4_2025_nichts_ist_mehr_sicher_leben_und_w), pp. 26–27: retained CV/source link.
 - [Thurgauer Zeitung portrait](https://www.thurgauerzeitung.ch/ostschweiz/kanton-thurgau/portrait-moritz-beyn-thurgauer-grossratswahlen-2024-ld.2593006): retained CV/source link. Access may require a subscription.
 
-Publication covers are original typographic identifiers and illustrations, not reproductions of the publications' artwork. Organization initials are text identifiers rather than official logos. No live social feed, analytics, trackers, external embeds, or invented engagement statistics are used.
+Publication covers are original typographic identifiers and illustrations, not reproductions of the publications' artwork. Education and experience entries use official university and company logos from their websites. Sources are listed in `THIRD_PARTY_NOTICES.md`. No live social feed, analytics, trackers, external embeds, or invented engagement statistics are used.
 
 ## GitHub Pages
 
