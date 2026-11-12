@@ -20,7 +20,7 @@ Open `index.html` directly or serve the folder with a static HTTP server. No dep
 
 Projects, research, newspaper articles, magazines, radio, and podcasts share one collection and one navigation entry. Optional All / Projects / Media filters narrow the same collection. Each card links directly to the original project or publication. Links to external websites open in a new tab.
 
-To add an entry, copy an existing `.work-card` in `index.html`, set `data-kind` to `project` or `media`, and update its title, description, cover, tags, and destination links. Filter counts are calculated automatically; update the static counts and the `section-number` range for the no-JavaScript fallback. Use a clear destination label: the Unibloom entry links to the company, while the thesis entry links to the public research repository.
+To add an entry, copy an existing `.work-card` in `index.html`, set `data-kind` to `project` or `media`, and update its title, description, cover, tags, and destination links. Filter counts are calculated automatically; update the static counts for the no-JavaScript fallback. Use a clear destination label: the Unibloom entry links to the company, while the thesis entry links to the public research repository.
 
 ## Content sources
 
@@ -34,7 +34,7 @@ Personal background is retained from the existing website, previously based on t
 - [ALMA 4/2025](https://issuu.com/hsgalumni/docs/alma_4_2025_nichts_ist_mehr_sicher_leben_und_w), pp. 26–27: retained CV/source link.
 - [Thurgauer Zeitung portrait](https://www.thurgauerzeitung.ch/ostschweiz/kanton-thurgau/portrait-moritz-beyn-thurgauer-grossratswahlen-2024-ld.2593006): retained CV/source link. Access may require a subscription.
 
-Publication covers are original typographic identifiers and illustrations, not reproductions of the publications' artwork. Education and experience entries use official university and company logos from their websites. Sources are listed in `THIRD_PARTY_NOTICES.md`. No live social feed, analytics, trackers, external embeds, or invented engagement statistics are used.
+Media cards use official publisher logos and podcast artwork. The ALMA masthead is extracted from its official 2026 media kit. Education and experience entries use official university and company logos from their websites. Sources are listed in `THIRD_PARTY_NOTICES.md`. No live social feed, analytics, trackers, external embeds, or invented engagement statistics are used.
 
 ## GitHub Pages
 

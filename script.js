@@ -125,7 +125,7 @@ function updateNavigation() {
     if (matches) link.setAttribute('aria-current', 'location');
     else link.removeAttribute('aria-current');
   }
-  pageLabel.textContent = active === 'projects' ? 'Projects & Media' : active === 'contact' ? 'Get in touch' : 'About me';
+  pageLabel.textContent = active === 'projects' ? 'Projects & Media' : active === 'contact' ? 'Contact' : 'About me';
   scrollQueued = false;
 }
 window.addEventListener('scroll', () => {
