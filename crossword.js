@@ -71,7 +71,7 @@
     clueButtons.forEach((button, id) => button.setAttribute('aria-pressed', String(id === entry.id)));
     if (focus) {
       const target = cell || entry.cells.find(item => !item.input.value) || entry.cells[0];
-      target.input.focus({ preventScroll: true });
+      target.input.focus();
       target.input.select();
     }
   }

@@ -213,9 +213,11 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
 
 .skills-section { padding: 40px 0 44px; }
 .skills-section .section-title { font-size: 25px; margin-bottom: 24px; }
-.skills-grid { gap: 18px; align-items: stretch; }
+.skills-grid { gap: 14px; align-items: stretch; }
 
 .skill-card {
+  position: relative;
+  padding: 16px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 9px;
@@ -224,25 +226,27 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
 }
 
 .skill-picture {
+  position: absolute;
+  top: 13px;
+  left: 11px;
   display: grid;
   place-items: center;
-  height: 114px;
-  border-bottom: 1px solid var(--line);
+  width: 44px;
+  height: 40px;
 }
 
-.skill-picture svg { width: 132px; height: 88px; }
-.skill-picture .illustration-fill { fill: currentColor; opacity: .07; }
-.skill-picture-commercial { background: #f0f5fc; color: #456ca2; }
-.skill-picture-technical { background: #f0f6f3; color: #4d7a68; }
-.skill-picture-languages { background: #f5f2fa; color: #7a649b; }
-.skill-content { padding: 19px 20px 22px; }
-.skills-grid h3 { font-size: 15px; margin-bottom: 9px; }
-.skills-grid p { font-size: 12px; line-height: 1.8; }
-.skills-grid p.item-detail { font-size: 11px; margin-top: 7px; }
+.skill-picture svg { width: 68px; height: 46px; }
+.skill-picture-commercial { color: #456ca2; }
+.skill-picture-technical { color: #4d7a68; }
+.skill-picture-languages { color: #7a649b; }
+.skills-grid h3 { display: flex; align-items: center; min-height: 34px; padding-left: 44px; font-size: 16px; margin-bottom: 10px; }
+.skills-grid p { font-size: 14px; line-height: 1.65; }
+.skill-content p + p { margin-top: 6px; }
+.skills-grid p.item-detail { font-size: 12px; margin-top: 7px; }
 
-:root[data-theme="dark"] .skill-picture-commercial { background: #1a273b; color: #99baff; }
-:root[data-theme="dark"] .skill-picture-technical { background: #1a2c28; color: #a1cebc; }
-:root[data-theme="dark"] .skill-picture-languages { background: #292337; color: #c4b1e3; }
+:root[data-theme="dark"] .skill-picture-commercial { color: #99baff; }
+:root[data-theme="dark"] .skill-picture-technical { color: #a1cebc; }
+:root[data-theme="dark"] .skill-picture-languages { color: #c4b1e3; }
 
 .crossword-section {
   margin: 0 0 45px;
@@ -254,7 +258,6 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
 
 .crossword-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .crossword-heading h2 { font-size: 25px; }
-.crossword-heading p { color: var(--muted); margin-top: 7px; font-size: 12px; }
 .crossword-heading-icon { flex-shrink: 0; color: var(--accent); }
 .crossword-instructions { color: var(--muted); font-size: 11px; margin: 23px 0 18px; }
 .crossword-layout { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 30px; align-items: start; }
@@ -264,15 +267,11 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
   display: grid;
   grid-template-columns: repeat(11, minmax(0, 1fr));
   gap: 1px;
-  padding: 1px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  background: var(--line);
-  overflow: hidden;
+  background: transparent;
 }
 
-.crossword-cell { position: relative; aspect-ratio: 1; min-width: 0; background: var(--bg); }
-.crossword-cell.is-block { background: var(--surface-hover); }
+.crossword-cell { position: relative; aspect-ratio: 1; min-width: 0; border: 1px solid var(--line); background: var(--bg); }
+.crossword-cell.is-block { background: transparent; border: 0; visibility: hidden; }
 .crossword-cell.is-active { background: var(--accent-soft); }
 .crossword-cell.is-marked { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
 .crossword-cell:focus-within { z-index: 1; outline: 2px solid var(--accent); outline-offset: -2px; }
@@ -288,10 +287,10 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
   outline: none;
   background: transparent;
   color: var(--ink);
-  font: 600 clamp(13px, 1.5vw, 20px)/1 inherit;
   font-family: inherit;
   font-size: 18px;
   font-weight: 600;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   caret-color: var(--accent);
@@ -352,12 +351,6 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
   .skills-section { padding-block: 32px; }
   .skills-section .section-title { font-size: 24px; }
   .skills-grid { gap: 14px; }
-  .skill-card { display: grid; grid-template-columns: 100px minmax(0, 1fr); }
-  .skill-picture { height: 100%; min-height: 126px; border-bottom: 0; border-right: 1px solid var(--line); }
-  .skill-picture svg { width: 100px; height: 80px; }
-  .skill-content { padding: 18px; }
-  .skills-grid h3 { font-size: 14px; }
-  .skills-grid p { font-size: 12px; }
   .crossword-section { padding: 22px 16px; margin-bottom: 32px; }
   .crossword-heading h2 { font-size: 23px; }
   .crossword-heading-icon { display: none; }
