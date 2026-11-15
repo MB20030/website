@@ -251,7 +251,7 @@ h1{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:17px}
 .crossword-section {
   margin: 0 0 45px;
   padding: 30px;
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--line);
   border-radius: 9px;
 }
