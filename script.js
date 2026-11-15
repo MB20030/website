@@ -111,7 +111,7 @@ document.querySelector('.collection-toolbar').hidden = false;
 const navLinks = [...document.querySelectorAll('.main-nav a[href^="#"]')];
 const sections = [...document.querySelectorAll('main section[id]')];
 const pageLabel = document.getElementById('page-label');
-const backgroundIds = new Set(['education', 'experience', 'engagement', 'skills']);
+const backgroundIds = new Set(['education', 'experience', 'engagement', 'skills', 'crossword']);
 let scrollQueued = false;
 function updateNavigation() {
   const nearBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 16;
